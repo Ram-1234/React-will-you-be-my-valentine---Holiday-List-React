@@ -1,5 +1,3 @@
-
-import React, { Component, useState } from "react";
 import "./../styles/App.css";
 import React from "react";
 
@@ -28,12 +26,12 @@ const App = () => {
       return <li key={`location${index + 1}`}>{element.name}</li>;
     }
   });
+  // console.log({finalCity});
 
-    return (
-      <div id="main">
-       <ol>{finalCity}</ol>
-      </div>
-    );
-  };
-
+  return (
+    <div id="main">
+      <ol>{finalCity}</ol>
+    </div>
+  );
+};
 export default App;
